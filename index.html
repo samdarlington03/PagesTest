@@ -3,10 +3,10 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Template using a fullpage.js plugin</title>
-    <meta name="author" content="Alvaro Trigo Lopez" />
-    <meta name="description" content="fullPage auto-height example." />
-    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,auto-height,full-screen" />
+    <title>Networks of Wellington City</title>
+    <meta name="author" content="Sam Darlington" />
+    <meta name="description" content="Examples of Networks visible in the Wellington City center." />
+    <meta name="keywords"  content="wellington,network,examples" />
     <meta name="Resource-type" content="Document" />
 
 
@@ -29,7 +29,7 @@
             $('#fullpage').fullpage({
                 verticalCentered: true,
                 anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#FF6666']
+                sectionsColor: ['#B5A1C1', '#C7BBB6', '#DAD4AC', '#EDEDA2']
             });
         });
     </script>
@@ -37,7 +37,7 @@
     <style>
     /* in file css styling */
       .myContent{
-        min-height: 300px;
+        min-height: 100px;
         overflow: auto;
       }
       .row{width:!100%;height:auto;margin:30px;float:left;}
@@ -48,20 +48,24 @@
       }
       .splitRight{
         height:auto;
-        width:75%;
+        width:40%;
         /*background-color: grey;*/
         float:left;
       }
       .imageBox{
         width:100%;
+        height:400px;
+
+      }
+	  .imageBoxH{
+        width:100%;
         height:300px;
-        background-color: #fff;
 
       }
       p{
         font-size: 22px;
         text-align: left;
-        margin-left: 20px;
+        margin-left: 100px;
         margin-top: 20px;
         margin-right: 20px;
       }
@@ -70,10 +74,10 @@
 </head>
 <body>
   <ul id="menu"><!-- menu items -->
-      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
-      <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-      <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-      <li data-menuanchor="4thPage"><a href="#4thPage">fourth slide</a></li>
+      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Intro</a></li>
+      <li data-menuanchor="secondPage"><a href="#secondPage">Social Media</a></li>
+      <li data-menuanchor="3rdPage"><a href="#3rdPage">Manhole Covers</a></li>
+      <li data-menuanchor="4thPage"><a href="#4thPage">Bus System</a></li>
       <!-- add another li element to create a new menu tab -->
   </ul>
 
@@ -81,64 +85,186 @@
     <!-- section starts -->
     <div class="section" id="section0">
        <div class="myContent">
-          <h1>Section 1</h1>
+          <h1>Networks of Wellington City</h1>
         </div>
     </div>
     <!-- section ends -->
-    <!-- section starts -->
+        <!-- section starts -->
     <div class="section fp-auto-height" id="section1">
-        <div class="slide" id="slide1"><!-- horizontal slide -->
-          <div class="myContent">
-              <h1>Section 2</h1>
+        <div class="myContent">
+			<div class="myContent">
+			  <h1>Social Media in Wellington City</h1>
+			  <p></p>
+			  <p></p>
+			  <p></p>
+			  <h2>The mark social media has on our everyday lives is evident as a thriving network within Wellington City as well.</h2>
+			</div>
+		<!-- row starts -->
+          <div class="row">
+            <div class="splitLeft"><!-- left div with 25% -->
+              <div class="imageBoxH">
+                <!-- img goes here -->
+                <img src="img/2 1.png" height="300">
+              </div>
             </div>
-        </div>
-        <div class="slide" id="slide2"><!-- second horizontal slide -->
-
-            <h1>Section 2.2</h1>
+			<div class="splitRight"><!-- right div with 75% -->
+              <p><!-- paragraph -->
+              A sign on the window of Te Auaha advertising the school. It includes a link to their website and several social media badges to indicate their presence on those sites. 
+			  </p>
+			  <p>
+			  They have a badge for Instagram, Facebook, and Twitter.
+			  </p>
+            </div><!-- right section ends -->
+          </div>
+          <!-- row ends -->
+		  <!-- row starts -->
+          <div class="row">
+            <div class="splitLeft"><!-- left div with 25% -->
+              <div class="imageBoxH">
+                <!-- img goes here -->
+                <img src="img/2 2.png" height="300">
+              </div>
+            </div>
+            <div class="splitRight"><!-- right div with 75% -->
+              <p><!-- paragraph -->
+                A decal on the window of Cotton On on Cuba Street. They list their website and several social media badges.
+				</p>
+				<p>
+				The badges shown include Instagram, Pinterest, and others.
+				</p>
+            </div><!-- right section ends -->
+          </div>
+          <!-- row ends -->
+		  <!-- row starts -->
+          <div class="row">
+            <div class="splitLeft"><!-- left div with 25% -->
+              <div class="imageBoxH">
+                <!-- img goes here -->
+                <img src="img/2 3.png" height="300">
+              </div>
+            </div>
+			<div class="splitRight"><!-- right div with 75% -->
+              <p><!-- paragraph -->
+                A billboard on Church Street for Securapark. It lists their website address below their name and logo.
+				</p>
+            </div><!-- right section ends -->
+          </div>
+          <!-- row ends -->
+		  <!-- row starts -->
+          <div class="row">
+            <div class="splitLeft"><!-- left div with 25% -->
+              <div class="imageBoxH">
+                <!-- img goes here -->
+                <img src="img/2 4.png" height="300">
+              </div>
+            </div>
+			<div class="splitRight"><!-- right div with 75% -->
+              <p><!-- paragraph -->
+                The hanging sign for (habit) outside of their entrance. It indicates their web address below their logo.
+				</p>
+            </div><!-- right section ends -->
+          </div>
+          <!-- row ends -->
         </div>
     </div>
     <!-- section ends -->
     <!-- section starts -->
     <div class="section fp-auto-height" id="section2">
         <div class="myContent">
-          <h1>Section 3</h1>
-          <h3>This is the third section</h3>
+			<div class="myContent">
+			  <h1>Manhole Covers in Wellington City</h1>
+			  <p></p>
+			  <p></p>
+			  <p></p>
+			  <h2>There are many manholes in the Wellington Central area. The designs on their covers generally indicate their owners.</h2>
+			</div>
+          <!-- row starts -->
+          <div class="row">
+            <div class="splitLeft"><!-- left div with 25% -->
+              <div class="imageBoxH">
+                <!-- img goes here -->
+                <img src="img/3 1.png" height="300">
+              </div>
+            </div>
+			<div class="splitRight"><!-- right div with 75% -->
+              <p><!-- paragraph -->
+              A manhole cover from the Wellington City Council. It features a circular logo with a grid of extruded squares.
+			  </p>
+            </div><!-- right section ends -->
+          </div>
+          <!-- row ends -->
+		  <!-- row starts -->
+          <div class="row">
+            <div class="splitLeft"><!-- left div with 25% -->
+              <div class="imageBoxH">
+                <!-- img goes here -->
+                <img src="img/3 2.png" height="300">
+              </div>
+            </div>
+            <div class="splitRight"><!-- right div with 75% -->
+              <p><!-- paragraph -->
+                An alternate design of the same manhole cover, using a hexagon shape for the logo rather than the circle.
+				</p>
+            </div><!-- right section ends -->
+          </div>
+          <!-- row ends -->
+		  <!-- row starts -->
+          <div class="row">
+            <div class="splitLeft"><!-- left div with 25% -->
+              <div class="imageBoxH">
+                <!-- img goes here -->
+                <img src="img/3 3.png" height="300">
+              </div>
+            </div>
+			<div class="splitRight"><!-- right div with 75% -->
+              <p><!-- paragraph -->
+                A manhole cover belonging to Hynds Pipe Systems. The design is several concentric semi-circles with the Hynds logo in the center.
+				</p>
+            </div><!-- right section ends -->
+          </div>
+          <!-- row ends -->
+		  <!-- row starts -->
+          <div class="row">
+            <div class="splitLeft"><!-- left div with 25% -->
+              <div class="imageBoxH">
+                <!-- img goes here -->
+                <img src="img/3 4.png" height="300">
+              </div>
+            </div>
+			<div class="splitRight"><!-- right div with 75% -->
+              <p><!-- paragraph -->
+                Another Wellington City Council manhole cover. It has a much more decorative, somewhat floral design.
+				</p>
+            </div><!-- right section ends -->
+          </div>
+          <!-- row ends -->
         </div>
     </div>
     <!-- section ends -->
     <!-- section starts -->
     <div class="section fp-auto-height" id="section3">
         <div class="myContent">
+			<div class="myContent">
+			  <h1>Wellington City Bus Network</h1>
+			  <p></p>
+			  <p></p>
+			  <p></p>
+			  <h2>Wellington has a large network of Bus Stops dotted all over the central city.</h2>
+			</div>
           <!-- row starts -->
           <div class="row">
             <div class="splitLeft"><!-- left div with 25% -->
               <div class="imageBox">
                 <!-- img goes here -->
-                <h2>here goes the img</h2><!-- replace with <img src="img/imagename.jpg"> tags -->
+                <img src="img/4.png" height="300">
               </div>
             </div>
             <div class="splitRight"><!-- right div with 75% -->
               <p><!-- paragraph -->
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in arcu eget massa dictum tincidunt. Donec sed feugiat lectus, vitae auctor massa. Donec aliquam porttitor porttitor.
-                Fusce ac nunc vitae nisi interdum placerat. Suspendisse molestie id urna ut pulvinar. Praesent eleifend risus sapien, a fermentum ante porttitor at. Curabitur mattis ultricies rhoncus.
-                Curabitur placerat nulla ut nisi faucibus elementum. Maecenas magna mi, dapibus ut sagittis et.
-              </p>
-            </div><!-- right section ends -->
-          </div>
-          <!-- row ends -->
-          <!-- row starts -->
-          <div class="row">
-            <div class="splitLeft"><!-- left div with 25% -->
-              <div class="imageBox">
-                <!-- img goes here -->
-                <h2>here goes the img</h2><!-- replace with <img src="img/imagename.jpg"> tags -->
-              </div>
-            </div>
-            <div class="splitRight"><!-- right div with 75% -->
-              <p><!-- paragraph -->
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in arcu eget massa dictum tincidunt. Donec sed feugiat lectus, vitae auctor massa. Donec aliquam porttitor porttitor.
-                Fusce ac nunc vitae nisi interdum placerat. Suspendisse molestie id urna ut pulvinar. Praesent eleifend risus sapien, a fermentum ante porttitor at. Curabitur mattis ultricies rhoncus.
-                Curabitur placerat nulla ut nisi faucibus elementum. Maecenas magna mi, dapibus ut sagittis et.
+                A digital list of arrival times for the Manners Street Bus Stop, outside Kiwibank. These indicate the scheduled time of arrival for every bus that stops at that stop. 
+			  </p>
+			  <p>
+			  There are many like it dotted all around the city.
               </p>
             </div><!-- right section ends -->
           </div>
