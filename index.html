@@ -1,13 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <title>Pages Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Template using a fullpage.js plugin</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage auto-height example." />
+    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,auto-height,full-screen" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: true,
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#FF6666']
+            });
+        });
+    </script>
+
+    <style>
+    /* in file css styling */
+      .myContent{
+        min-height: 300px;
+        overflow: auto;
+      }
+      .row{width:!100%;height:auto;margin:30px;float:left;}
+      .splitLeft{
+        height:auto;
+        width:25%;
+        float:left;
+      }
+      .splitRight{
+        height:auto;
+        width:75%;
+        /*background-color: grey;*/
+        float:left;
+      }
+      .imageBox{
+        width:100%;
+        height:300px;
+        background-color: #fff;
+
+      }
+      p{
+        font-size: 22px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+    </style>
+
 </head>
-
 <body>
-  <p><h1>Hello World!</h1></p>  
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu lectus sem. Nullam dolor tortor, elementum et dictum quis, mattis sit amet nunc. Proin aliquet, nunc vitae tempus luctus, ipsum leo bibendum odio, at pellentesque turpis ipsum sit amet dolor. Duis neque urna, egestas vel venenatis vel, gravida eu nisi. Proin lectus libero, accumsan nec libero vitae, tincidunt dictum sapien. Duis aliquam, sem id varius eleifend, magna enim tincidunt diam, eget faucibus purus enim vel quam. Morbi euismod felis sed condimentum viverra. Sed bibendum purus non nunc efficitur varius. Sed in congue arcu. Quisque eget nisi dolor. Mauris ultrices hendrerit felis, vitae suscipit mauris dapibus vel. Nam blandit metus at purus finibus, eu sagittis lectus venenatis. Aenean id tempus orci, eget convallis orci. Etiam consectetur, ligula sed vestibulum vestibulum, tortor leo pretium nisl, non bibendum ante risus sit amet odio.</p>
-</body>
+  <ul id="menu"><!-- menu items -->
+      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+      <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+      <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+      <li data-menuanchor="4thPage"><a href="#4thPage">fourth slide</a></li>
+      <!-- add another li element to create a new menu tab -->
+  </ul>
 
+<div id="fullpage">
+    <!-- section starts -->
+    <div class="section" id="section0">
+       <div class="myContent">
+          <h1>Section 1</h1>
+        </div>
+    </div>
+    <!-- section ends -->
+    <!-- section starts -->
+    <div class="section fp-auto-height" id="section1">
+        <div class="slide" id="slide1"><!-- horizontal slide -->
+          <div class="myContent">
+              <h1>Section 2</h1>
+            </div>
+        </div>
+        <div class="slide" id="slide2"><!-- second horizontal slide -->
+
+            <h1>Section 2.2</h1>
+        </div>
+    </div>
+    <!-- section ends -->
+    <!-- section starts -->
+    <div class="section fp-auto-height" id="section2">
+        <div class="myContent">
+          <h1>Section 3</h1>
+          <h3>This is the third section</h3>
+        </div>
+    </div>
+    <!-- section ends -->
+    <!-- section starts -->
+    <div class="section fp-auto-height" id="section3">
+        <div class="myContent">
+          <!-- row starts -->
+          <div class="row">
+            <div class="splitLeft"><!-- left div with 25% -->
+              <div class="imageBox">
+                <!-- img goes here -->
+                <h2>here goes the img</h2><!-- replace with <img src="img/imagename.jpg"> tags -->
+              </div>
+            </div>
+            <div class="splitRight"><!-- right div with 75% -->
+              <p><!-- paragraph -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in arcu eget massa dictum tincidunt. Donec sed feugiat lectus, vitae auctor massa. Donec aliquam porttitor porttitor.
+                Fusce ac nunc vitae nisi interdum placerat. Suspendisse molestie id urna ut pulvinar. Praesent eleifend risus sapien, a fermentum ante porttitor at. Curabitur mattis ultricies rhoncus.
+                Curabitur placerat nulla ut nisi faucibus elementum. Maecenas magna mi, dapibus ut sagittis et.
+              </p>
+            </div><!-- right section ends -->
+          </div>
+          <!-- row ends -->
+          <!-- row starts -->
+          <div class="row">
+            <div class="splitLeft"><!-- left div with 25% -->
+              <div class="imageBox">
+                <!-- img goes here -->
+                <h2>here goes the img</h2><!-- replace with <img src="img/imagename.jpg"> tags -->
+              </div>
+            </div>
+            <div class="splitRight"><!-- right div with 75% -->
+              <p><!-- paragraph -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in arcu eget massa dictum tincidunt. Donec sed feugiat lectus, vitae auctor massa. Donec aliquam porttitor porttitor.
+                Fusce ac nunc vitae nisi interdum placerat. Suspendisse molestie id urna ut pulvinar. Praesent eleifend risus sapien, a fermentum ante porttitor at. Curabitur mattis ultricies rhoncus.
+                Curabitur placerat nulla ut nisi faucibus elementum. Maecenas magna mi, dapibus ut sagittis et.
+              </p>
+            </div><!-- right section ends -->
+          </div>
+          <!-- row ends -->
+        </div>
+    </div>
+    <!-- section ends -->
+</div>
+
+</body>
 </html>
